@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In</title>
+    <link rel="stylesheet" href="/css/tabs style/login.css">
 </head>
 <body>
     <%- include("partials/navigationBar") %>
-    <h1>login here</h1>
+    <main class="content">
+        <div class="item">
+            <form action="/login/post" method="post" class="login_data">
+                <input class="all_input" id="email" type="email" placeholder="Enter Your Email .......">
+                <input class="all_input" id="password" type="password" placeholder="Enter Your Password .......">
+                <div>
+                    <button id="register">Register</button>
+                    <input class="all_button" id="submit" type="submit" value="Log-In">
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
