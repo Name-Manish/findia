@@ -49,14 +49,50 @@
 
 
 
-/*sidebar designing*/
-/* #sidebar{
+/* sidebar designing */
+#sidebar{
     display: none;
 }
+
+
 @media (max-width: 480px){
     #sidebar{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        margin: auto;
+        background-color: rgb(189, 188, 188);
+        height: 100vh;
+        position: absolute;
+
+        animation-name: any;
+        animation-fill-mode: forwards;
+        animation-duration: 0.2s;
+        animation-timing-function: ease;
     }
-} */
+    .all_tabs2{
+        height: 50vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .all_tabs2>li{
+        list-style: none;
+    }
+    .all_tabs2>li>a{
+        text-decoration: none;
+    }
+}
+
+
+@keyframes any{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
