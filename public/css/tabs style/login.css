@@ -1,0 +1,54 @@
+.loginContainer{
+    height: 35rem;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.loginItem{
+    /* border: 2px solid black; */
+    height: 35rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* input styling */
+.input_data{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input_data>li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.input{
+    height: 2rem;
+    width: 20rem;
+}
+.input:focus{
+    outline: none;
+}
+
+
+/* button styling */
+.submit_button>button{
+    height: 2rem;
+    width: 8rem;
+}
+
+
+/* register styling here */
+

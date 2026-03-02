@@ -8,6 +8,31 @@
 </head>
 <body>
     <%- include("partials/navigationBar") %>
-    <h1>log in</h1>
+    <section class="loginContainer">
+        <div class="loginItem">
+            <h1 id="Paging_Data">LogIn Page</h1>
+            <div class="input_data">
+                <li id="hide">
+                    <!-- <label class="label0">Name</label> -->
+                    <input class="input" id="input0" type="text" placeholder="Enter Your Name">
+                </li>
+                <li>
+                    <!-- <label class="label1">Email</label> -->
+                    <input class="input" id="input1" type="email" placeholder="Enter Your Email">
+                </li>
+
+                <li>
+                    <!-- <label class="label2">Password</label> -->
+                    <input class="input" id="input2" type="password" placeholder="Enter Your Password">
+                </li>
+            </div>
+            <div class="submit_button">
+                <button id="login">Log-In</button>
+                <button id="register">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/tabs_Scripting/login.js"></script>
 </body>
 </html>
