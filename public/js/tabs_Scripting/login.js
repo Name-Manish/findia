@@ -16,7 +16,7 @@ register.addEventListener("click",(e)=>{
 
     hide.style.display="flex";
     if(Paging_Data.innerText == "Register Now"){
-        fetch("http://localhost:5000/register",{
+        fetch("https://findia-server.onrender.com/register",{
             method: "POST",
             headers:{
                 "Content-Type":"application/json",
@@ -51,7 +51,7 @@ login.addEventListener("click",(e)=>{
     const email = document.getElementById("input1").value;
     const password = document.getElementById("input2").value;
 
-    fetch("http://localhost:5000/login",{
+    fetch("https://findia-server.onrender.com/login",{
             method: "POST",
             headers:{
                 "Content-Type":"application/json",
