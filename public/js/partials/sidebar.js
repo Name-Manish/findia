@@ -13,3 +13,23 @@ togleBar.addEventListener("click",()=>{
         sidebar.style.display = "none";
     }
 })
+
+
+fetch("https://findia-server.onrender.com/AuthAPI/profile", {
+    method:"GET",
+  credentials: "include"
+})
+.then(res => res.json())
+.then(data => {
+  if (data.logedIn==true) {
+    document.getElementById("logedIn").style.display="none";
+    document.getElementById("profile").style.display="block";
+} else {
+    document.getElementById("profile").style.display="none";
+    document.getElementById("logedIn").style.display="block";
+    
+
+  }
+
+console.log("logdata",data);
+});
