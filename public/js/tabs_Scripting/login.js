@@ -64,6 +64,7 @@ login.addEventListener("click",(e)=>{
         }).then(function(data){
             console.log(data);
             if(data.token){
+                localStorage.setItem("token", data.token);
                 window.location.href="/profile";
             }
         }).catch(function(err){
