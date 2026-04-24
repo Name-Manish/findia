@@ -63,10 +63,10 @@ login.addEventListener("click",(e)=>{
             return res.json();
         }).then(function(data){
             console.log(data);
-            if(data.token){
-                localStorage.setItem("token", data.token);
-                window.location.href="/profile";
-            }
+            // if(data.token){
+            //     localStorage.setItem("token", data.token);
+            //     // window.location.href="/profile";
+            // }
         }).catch(function(err){
             console.log(err);
         })
