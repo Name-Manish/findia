@@ -15,7 +15,7 @@ togleBar.addEventListener("click",()=>{
 })
 
 
-fetch("https://findia-server.onrender.com/AuthAPI/profile", {
+fetch("http://localhost:5000/AuthAPI/profile", {
     method:"GET",
   credentials: "include"
 })

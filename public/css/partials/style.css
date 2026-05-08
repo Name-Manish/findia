@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    /* background: #000000; */
+    color: white;
+}
+
+/* NAVBAR */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #767575;
+}
+
+/* LOGO */
+.logo img {
+    height: 45px;
+    transition: 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.tabs{
+    /* border: 2px solid black; */
+    height: 3rem;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs li{
+    width: 50vw;
+    height: 3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.tabs li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: all 0.3s;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.tabs li a:hover{
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
+
+
+
+.hamburger{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.hamburger>span{
+    background-color: black;
+    height: 3px;
+    width: 2.5rem;
+}

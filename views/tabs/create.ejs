@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/tabs/create.css">
+  </head>
+  <body>
+    <%- include('../partials/navigationBar') %>
+
+    <section class="container1">
+      <!-- Background -->
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+
+      <div class="container2">
+        <h1>📁 My Flashcard Folders</h1>
+
+        <div class="folder-grid">
+          <!-- Add Folder -->
+          <div class="add-folder" onclick="openPopup()">
+            <div class="plus">+</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="popup">
+        <div class="popup-box">
+          <div class="close-btn" onclick="closePopup()">×</div>
+
+          <div class="folder-icon"></div>
+
+          <h2>Create Folder</h2>
+
+          <p>Organize your flashcards beautifully by creating folders.</p>
+
+          <form>
+            <div class="input-box">
+              <input type="text" placeholder="Enter Folder Name" />
+            </div>
+
+            <button class="create-btn">Create Folder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
