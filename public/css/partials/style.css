@@ -18,6 +18,7 @@ body {
     align-items: center;
     padding: 15px 50px;
     background: #767575;
+    position: relative;
 }
 
 /* LOGO */
@@ -78,4 +79,27 @@ body {
     background-color: black;
     height: 3px;
     width: 2.5rem;
+}
+
+
+@media (max-width:600px){
+    .hamburger{
+        display: flex;
+    }
+    .tabs{
+        display: none;
+        position: absolute;
+    }
+    .animatin_and_style{
+        background-color: black; 
+        color: white;
+        width: 100%;
+        height: 30rem;
+        left: 0px;
+        top: 78px;
+    }
+    .animatin_and_style>li{
+        display: flex;
+        flex-direction: column;
+    }
 }
